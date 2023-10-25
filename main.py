@@ -21,13 +21,14 @@ def main():
                 quit()
             password = decoder(encoded_pw)
 
-
-
-
-
         else:
             quit()
 
+def encoder(number):
+    s = ""
+    for i in number:
+        s += str(int(i) + 3)
+    return s
 
 def decoder(string_pw):
     new_val_list = []
